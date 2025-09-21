@@ -22,9 +22,24 @@ const Sidebar: FC = () => {
         <Link href="/textsummarizer" className="p-3 rounded-lg hover:bg-blue-700 transition-all duration-200 flex items-center gap-2">
           <span>📝</span> Text Summarizer
         </Link>
-        <Link href="/imagegenerate" className="p-3 rounded-lg hover:bg-blue-700 transition-all duration-200 flex items-center gap-2">
-          <span>🖼️</span> Image Generator
+        <Link href="/textgenerator" className="p-3 rounded-lg hover:bg-blue-700 transition-all duration-200 flex items-center gap-2">
+          <span>🖼️</span> Text generator
         </Link>
+
+          <Link href="/qna" className="p-3 rounded-lg hover:bg-blue-700 transition-all duration-200 flex items-center gap-2">
+          <span>🖼️</span> Q&A assitant
+        </Link>
+        
+          <Link href="/lt" className="p-3 rounded-lg hover:bg-blue-700 transition-all duration-200 flex items-center gap-2">
+          <span>🖼️</span> language translator
+        </Link>
+
+         <Link href="/imagegen" className="p-3 rounded-lg hover:bg-blue-700 transition-all duration-200 flex items-center gap-2">
+          <span>🖼️</span> Image generator
+        </Link>
+              <Link href="/aicode" className="p-3 rounded-lg hover:bg-blue-700 transition-all duration-200 flex items-center gap-2">
+          <span>🖼️</span> Ai code translator
+       </Link>
       </nav>
     </aside>
   );

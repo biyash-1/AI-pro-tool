@@ -18,12 +18,7 @@ const Navbar = () => {
           <li>
             <Link href="/about">About</Link>
           </li>
-          <li>
-            <Link href="/meditation">Meditation</Link>
-          </li>
-          <li>
-            <Link href="/notifications">Notifications</Link>
-          </li>
+         
         </ul>
 
         {/* Auth Section */}

@@ -10,7 +10,7 @@ const Navbar = () => {
           <Link href="/"> welcome to AI pro tool</Link>
         </div>
 
-        {/* Links */}
+     
         <ul className="hidden md:flex space-x-6 text-cyan-800 font-medium">
           <li>
             <Link href="/">Home</Link>
@@ -21,7 +21,7 @@ const Navbar = () => {
          
         </ul>
 
-        {/* Auth Section */}
+      
         <div className="flex items-center space-x-3">
       
         </div>

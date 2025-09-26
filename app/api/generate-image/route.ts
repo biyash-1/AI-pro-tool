@@ -16,11 +16,11 @@ export async function POST(req: Request) {
 
     const genAI = new GoogleGenerativeAI(apiKey);
 
-    // Use the correct supported image model
     const model = genAI.getGenerativeModel({
-      model: modelType === "imagen"
-        ? "imagen-3.0"  // if you have access to Imagen
-        : "gemini-2.5-flash-image-preview"
+      model:
+        modelType === "imagen"
+          ? "imagen-3.0"
+          : "gemini-2.5-flash-image-preview",
     });
 
     const result = await model.generateContent(prompt);
@@ -48,7 +48,6 @@ export async function POST(req: Request) {
       image: imageData,
       mimeType: "image/png",
     });
-
   } catch (error: any) {
     console.error("Error calling Gemini API:", error);
     return NextResponse.json(

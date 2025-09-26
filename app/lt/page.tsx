@@ -78,10 +78,10 @@ export default function TranslatorPage() {
           </p>
         </div>
 
-        {/* Form */}
+   
         <div className="bg-white rounded-xl shadow-lg p-6 mb-8">
           <form onSubmit={handleSubmit} className="space-y-6">
-            {/* Input text */}
+       
             <div>
               <label
                 htmlFor="text"
@@ -147,7 +147,7 @@ export default function TranslatorPage() {
           </form>
         </div>
 
-        {/* Result */}
+   
         {result && (
           <div className="bg-white rounded-xl shadow-lg p-6">
             <h2 className="text-2xl font-semibold text-indigo-800 mb-4">
@@ -184,7 +184,7 @@ export default function TranslatorPage() {
           </div>
         )}
 
-        {/* Tips */}
+    
         {!result && !isLoading && (
           <div className="bg-white rounded-xl shadow-lg p-6 mt-8">
             <h3 className="text-xl font-semibold text-indigo-800 mb-3">

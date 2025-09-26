@@ -55,15 +55,15 @@ export default function QnAAssistant() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 to-emerald-50 p-6">
       <div className="max-w-4xl mx-auto">
-        {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-green-800 mb-2">Q&A Assistant</h1>
+          <h1 className="text-4xl font-bold text-green-800 mb-2">
+            Q&A Assistant
+          </h1>
           <p className="text-lg text-green-600">
             Ask any question and get instant AI-powered answers
           </p>
         </div>
 
-        {/* Input Form */}
         <div className="bg-white rounded-xl shadow-lg p-6 mb-8">
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
@@ -80,7 +80,11 @@ export default function QnAAssistant() {
               />
             </div>
 
-            {error && <div className="p-3 bg-red-100 text-red-700 rounded-lg">{error}</div>}
+            {error && (
+              <div className="p-3 bg-red-100 text-red-700 rounded-lg">
+                {error}
+              </div>
+            )}
 
             <div className="flex gap-4">
               <button
@@ -102,10 +106,11 @@ export default function QnAAssistant() {
           </form>
         </div>
 
-        {/* Answer */}
         {answer && (
           <div className="bg-white rounded-xl shadow-lg p-6">
-            <h2 className="text-2xl font-semibold text-green-800 mb-4">Answer</h2>
+            <h2 className="text-2xl font-semibold text-green-800 mb-4">
+              Answer
+            </h2>
             <div className="p-4 bg-green-50 rounded-lg border border-green-100 prose max-w-none">
               <ReactMarkdown>{answer}</ReactMarkdown>
             </div>

@@ -29,15 +29,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen flex`}
       >
-        {/* Sidebar */}
         <Sidebar />
 
-        {/* Main content area */}
         <div className="flex-1 flex flex-col">
-   
           <Navbar />
 
-   
           <main className="flex-1 bg-gray-100 p-6 overflow-auto">
             {children}
           </main>
